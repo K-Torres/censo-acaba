@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="30dp"
+    tools:context=".Common.Register2ndclass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/register_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/back_btn"
+            android:transitionName="transition_back_btn"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/register_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight=".95"
+                android:fontFamily="@font/acme"
+                android:text="@string/proceso_de_registro"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:transitionName="transition_title_text"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/acme"
+                android:gravity="center"
+                android:text="2 / 3 "
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:transitionName="transition_title_text"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/person"
+                android:drawableLeft="@drawable/document"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/black"
+                android:paddingLeft="6sp"
+                android:text="Tipo de documento"
+                android:textColor="@color/black"
+                android:textSize="18sp"></TextView>
+
+            <Spinner
+                android:id="@+id/docspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:entries="@array/tipo_cedula"
+                android:padding="10sp"
+                android:textSize="24sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/numerodocumento"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/border">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableStart="@drawable/person"
+                    android:drawableLeft="@drawable/person"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/black"
+                    android:hint="Número de documento"
+                    android:inputType="number"
+                    android:paddingLeft="6sp"
+                    android:paddingBottom="12dp"
+                    android:textColorHint="@color/black"
+                    android:textSize="18sp"
+                    app:boxStrokeWidthFocused="2dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="@color/black"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/date"
+                android:drawableLeft="@drawable/date"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/black"
+                android:paddingLeft="6sp"
+                android:text="Fecha de expedicion"
+                android:textColor="@color/black"
+                android:textSize="18sp"></TextView>
+
+            <DatePicker
+                android:id="@+id/date_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:spinnersShown="true"></DatePicker>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="@color/black"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/location"
+                android:drawableLeft="@drawable/document"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/black"
+                android:paddingLeft="6sp"
+                android:text="Departamento"
+                android:textColor="@color/black"
+                android:textSize="18sp"></TextView>
+
+            <Spinner
+                android:id="@+id/departamento_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:entries="@array/departamento"
+                android:padding="10sp"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="@color/black"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/location"
+                android:drawableLeft="@drawable/document"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/black"
+                android:paddingLeft="6sp"
+                android:text="@string/municipio"
+                android:textColor="@color/black"
+                android:textSize="18sp"></TextView>
+
+            <Spinner
+                android:id="@+id/municipio_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:padding="10sp"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="@color/black"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/location"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/black"
+                android:paddingLeft="6sp"
+                android:text="Consejo"
+                android:textColor="@color/black"
+                android:textSize="18sp"></TextView>
+
+            <Spinner
+                android:id="@+id/consejo_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:padding="10sp"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="@color/black"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/location"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/black"
+                android:paddingLeft="6sp"
+                android:text="Comunidad"
+                android:textColor="@color/black"
+                android:textSize="18sp"></TextView>
+
+            <Spinner
+                android:id="@+id/comunidad_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:padding="10sp"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="@color/black"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tronco_familiar_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".15"
+                    android:gravity="center"
+                    android:paddingTop="5sp"
+                    android:text=" 110 - "
+                    android:textSize="25sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/troncofamiliar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10sp"
+                    android:layout_weight="0.1"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/border">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableStart="@drawable/familia"
+                        android:drawableLeft="@drawable/familia"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/black"
+                        android:hint="Tronco familiar"
+                        android:inputType="number"
+                        android:paddingLeft="6sp"
+                        android:paddingBottom="12dp"
+                        android:textColorHint="@color/black"
+                        android:textSize="18sp"
+                        app:boxStrokeWidthFocused="2dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/idfamiliar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="0.12"
+                    android:background="@drawable/border">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableStart="@drawable/person"
+                        android:drawableLeft="@drawable/person"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/black"
+                        android:hint="Id familiar"
+                        android:inputType="number"
+                        android:paddingLeft="6sp"
+                        android:paddingBottom="12dp"
+                        android:textColorHint="@color/black"
+                        android:textSize="18sp"
+                        app:boxStrokeWidthFocused="2dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="@color/black"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/house"
+                android:drawableLeft="@drawable/house"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/black"
+                android:paddingLeft="6sp"
+                android:text="Permanencia territorial"
+                android:textColor="@color/black"
+                android:textSize="18sp"></TextView>
+
+            <Spinner
+                android:id="@+id/permanencia_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:entries="@array/permanencia_territorial"
+                android:padding="10sp"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register_next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="5dp"
+            android:onClick="callNextRegisterScreen"
+            android:text="@string/next_btn"
+            android:textColor="@color/white"
+            android:transitionName="transition_next_btn"></Button>
+
+    </LinearLayout>
+
+</ScrollView>

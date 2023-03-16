@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">Censo Acaba</string>
+    <string name="logo_name">ACABA</string>
+    <string name="slogo_name">Por la defensa y administración de nuestro Territorio Ancentral</string>
+
+
+    <string name="first_slade_tittle">Bienvenido a Censo ACABA</string>
+    <string name="second_slade_tittle">Unete a nosotros</string>
+    <string name="third_slade_tittle">Registrate</string>
+
+    <string name="first_slade_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu</string>
+    <string name="second_slade_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu</string>
+    <string name="third_slade_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu</string>
+
+    <string name="skip_btn">Saltar</string>
+    <string name="next_btn">Siguiente</string>
+    <string name="let_get_started">Iniciar</string>
+
+    <string name="proceso_de_registro">Proceso\nde registro</string>
+    <string name="nombres">Nombres</string>
+    <string name="primer_apellido">Primer Apellido</string>
+    <string name="segundo_apellido">Segundo Apellido</string>
+    <string name="correo_electronico">Correo electronico</string>
+    <string name="genero">Género</string>
+    <string name="fecha_de_nacimiento">Fecha de nacimiento</string>
+    <string name="current_date"></string>
+    <string name="municipio">Municipio</string>
+    <string name="etnia">Etnia</string>
+    <string name="censo_acaba">Censo - Acaba</string>
+    <string name="nombre_de_usuario">Nombre de usuario</string>
+    <string name="ingresar">Ingresar</string>
+    }
+    <string name="todo">TODO</string>
+    <string name="contrase_a">Contraseña</string>
+
+    <string-array name="tipo_cedula">
+        <item>CC</item>
+        <item>RC</item>
+        <item>TI</item>
+    </string-array>
+
+    <string-array name="etnia">
+        <item>Afrocolombiano</item>
+        <item>Caucásico</item>
+        <item>Indígena</item>
+        <item>Mestizo</item>
+        <item>Otro grupo</item>
+    </string-array>
+
+    <string-array name="tipo_sangre">
+        <item>O+</item>
+        <item>O-</item>
+        <item>A-</item>
+        <item>A+</item>
+        <item>B-</item>
+        <item>B+</item>
+        <item>AB-</item>
+        <item>AB+</item>
+    </string-array>
+
+    <string-array name="departamento">
+        <item>Chocó</item>
+    </string-array>
+
+    <string-array name="nivel_Escolar">
+        <item>Ninguna</item>
+        <item>Educacion Preescolar</item>
+        <item>Educacion Básica</item>
+        <item>Educacion Media</item>
+        <item>Educacion Superior</item>
+    </string-array>
+
+    <string-array name="discapacidad">
+        <item>Fisica</item>
+        <item>Auditiva</item>
+        <item>Sordoceguera</item>
+        <item>Intelectual</item>
+        <item>Psicosocial</item>
+        <item>Múltiple</item>
+        <item>No aplica</item>
+    </string-array>
+
+    <string-array name="tipo_victima">
+        <item>Victima directa</item>
+        <item>Victima indirecta</item>
+        <item>No aplica</item>
+    </string-array>
+
+    <string-array name="parentesco">
+        <item>Padre</item>
+        <item>Madre</item>
+        <item>Hijo(A)</item>
+        <item>Primo(A)</item>
+        <item>Sobrino(A)</item>
+        <item>Conyugue</item>
+    </string-array>
+
+    <string-array name="permanencia_territorial">
+        <item>Nativo</item>
+        <item>Renaciente</item>
+        <item>Residente</item>
+    </string-array>
+
+</resources>
